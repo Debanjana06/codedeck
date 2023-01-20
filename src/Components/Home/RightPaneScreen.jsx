@@ -46,7 +46,7 @@ function RightPaneScreen() {
             <div className='flex gap-10 items-center'>
               <img src="./logo.jpg" alt="logo" className='w-20 h-15' />
               <div>
-                <h6>title dammy</h6>
+                <h6>DSA</h6>
                 <h6>Language: C++</h6>
               </div>
               <div className='flex gap-4 items-center'>
