@@ -4,7 +4,7 @@ import { ModalContext } from '../../Context/ModalContext'
 
 function NewFolder() {
     const {closedModal} = React.useContext(ModalContext)
-    const [folderTitle, setfolderTitle] = useState('')
+   //  const [folderTitle, setfolderTitle] = useState('')
   return (
     <div>
         <div className='flex flex-row justify-end p-4'>
