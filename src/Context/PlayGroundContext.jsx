@@ -84,7 +84,7 @@ const PlaygroundProvider = ({ children }) => {
         else {
             localStorage.setItem("playground-data", JSON.stringify(folders));
         }
-    }, [folders,user])
+    }, [firstLoad,folders,user])
 
     const deleteCard = (folderId, cardId) => {
         setFolders((preFolder) => {
