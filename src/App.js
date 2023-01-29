@@ -6,6 +6,7 @@ import routes from './routes';
 // import {useAuthState} from 'react-firebase-hooks/auth';
 // import {auth , db} from './firebaseConfig';
 import ModalProvider from './Context/ModalContext';
+import PlaygroundProvider from './Context/PlayGroundContext';
 const SignIn = React.lazy(()=> import("./Pages/SignIn"));
 // const SignUp = React.lazy(()=> import("./Pages/SignUp"));
 const Page404 = React.lazy(()=> import("./Pages/Page404"));
@@ -15,6 +16,7 @@ function App() {
   let user="dfd"
   return (
     <Suspense>
+     <PlaygroundProvider>
       <ModalProvider>
       <Router>
         <Routes>
@@ -39,6 +41,7 @@ function App() {
         </Routes>
       </Router>
       </ModalProvider>
+      </PlaygroundProvider>
     </Suspense>
   );
 }
